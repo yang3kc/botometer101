@@ -38,7 +38,7 @@ if __name__ == "__main__":
         "#FLOKI",
         count=100
     ).items(n_tweets):
-        tweets.append(status)
+        tweets.append(status._json)
         if len(tweets) % 100 == 0:
             logger.info(f"Fetched {len(tweets)} tweets")
 
