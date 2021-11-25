@@ -1,9 +1,9 @@
 """
 This script collects tweets that contain the keyword
 
-argv[1]: the keyword to search
+argv[1]: keyword to search
 argv[2]: number of tweets
-argv[-1]: the filename of the output
+argv[-1]: filename of output
 
 """
 import utils
