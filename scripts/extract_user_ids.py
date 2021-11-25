@@ -4,6 +4,7 @@ This script extracts the unique user_ids from the tweet collection
 argv[1]: filename of input
 argv[-1]: filename of output
 """
+import sys
 import utils
 import json
 
