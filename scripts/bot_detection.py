@@ -58,7 +58,9 @@ if __name__ == "__main__":
                 type(e).__name__,
                 getattr(e, 'msg', '') or getattr(e, 'reason', ''),
                 )
-            result = {'error': err_msg}
+            logger.info(err_msg)
+            with open(f"{output_filename}.error", "a") as ef:
+                ef.write(f"{user_id}\n")
 
     logger.info(f"Fetched bot scores for {len(bot_scores)} / {len(user_ids)} accounts")
     logger.info("Start to dump the bot scores")
