@@ -45,8 +45,8 @@ if __name__ == "__main__":
     # start to check the bot scores
     logger.info(f"Check bot scores for {len(user_ids)} users")
     bot_scores = []
-    for user_id in user_ids:
-        logger.info(f"Checking user {user_id}...")
+    for index, user_id in enumerate(user_ids):
+        logger.info(f"Checking user {user_id}, {index} / {len(user_ids)}...")
         try:
             result = bom.check_account(user_id)
             bot_scores.append(result)
