@@ -60,6 +60,7 @@ if __name__ == "__main__":
                 )
             result = {'error': err_msg}
 
+    logger.info(f"Fetched bot scores for {len(bot_scores)} / {len(user_ids)} accounts")
     logger.info("Start to dump the bot scores")
     with open(output_filename, "w") as f:
         for bot_score in bot_scores:
