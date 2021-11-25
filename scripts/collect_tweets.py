@@ -45,5 +45,5 @@ if __name__ == "__main__":
     logger.info("Start to dump the tweets")
     with open(output_filename, "w") as f:
         for tweet in tweets:
-            tweet_str = json.dumps(tweets) + "\n"
+            tweet_str = json.dumps(tweet) + "\n"
             f.write(tweet_str)
