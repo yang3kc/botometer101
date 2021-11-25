@@ -63,6 +63,8 @@ if __name__ == "__main__":
                 ef.write(f"{user_id}\n")
 
     logger.info(f"Fetched bot scores for {len(bot_scores)} / {len(user_ids)} accounts")
+    if len(bot_scores) < len(user_ids):
+        logger.info(f"Error log file: {output_filename}.error")
     logger.info("Start to dump the bot scores")
     with open(output_filename, "w") as f:
         for bot_score in bot_scores:
