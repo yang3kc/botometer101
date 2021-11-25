@@ -35,7 +35,7 @@ if __name__ == "__main__":
     tweets = []
     for status in tweepy.Cursor(
         api.search,
-        "#FLOKI",
+        keyword,
         count=100
     ).items(n_tweets):
         tweets.append(status._json)
