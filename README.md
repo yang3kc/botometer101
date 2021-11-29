@@ -6,6 +6,14 @@ To demonstrate how to use [Botometer](botometer.osome.iu.edu) for bot detection 
 
 # How to
 
+## Obtain API keys
+
+To replicate this case study, you will need a valid Twitter developer key with access to the V1 API.
+You can apply at developer.twitter.com.
+You will also need a valid RapidAPI account, which you can register at https://rapidapi.com.
+Once you have a RapidAPI account, please subscribe to plan on https://rapidapi.com/OSoMe/api/botometer-pro/pricing .
+Now you are ready!
+
 ## Data collection
 
 Please refer to the scripts under folder [/scripts](/scripts) for code and instructions to fetch data from Twitter and run bot detection.
@@ -13,6 +21,14 @@ Please refer to the scripts under folder [/scripts](/scripts) for code and instr
 ## Data analysis
 
 Please refer to the jupyter notebook under folder [/exps](/exps) for code to analyze the collected data and visualize the results.
+
+# Resources
+
+To learn more about Botometer, visit the official website: https://botometer.osome.iu.edu/. Be sure to check out the FAQs.
+
+To learn more about Botometer Pro API, visit https://rapidapi.com/OSoMe/api/botometer-pro/. Be sure the check out the "about" information.
+
+To learn more about the `botometer-python` package, visit its GitHub repo: https://github.com/IUNetSci/botometer-python.
 
 # Dependency
 
