@@ -35,7 +35,7 @@ To learn more about the `botometer-python` package, visit its GitHub repo: https
 This demonstration use Python3.7 and the following packages:
 
 - [`botometer-python`](https://github.com/IUNetSci/botometer-python): query the Botometer Pro API
-- [`tweepy`](https://www.tweepy.org/): access Twitter API; please use versions >= 3.5.0,<4 that `botomeer-python` depends on as well
+- [`tweepy`](https://www.tweepy.org/): access Twitter API; please use versions >= 3.5.0,<4 that `botometer-python` depends on as well
 - [`requests`](https://docs.python-requests.org/en/latest/): make HTTPS requests
 
 If you also want to replicate the analysis, you will also need
