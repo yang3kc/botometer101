@@ -2,13 +2,13 @@
 
 In this case study, we aims to estimate which cashtag of `$SHIB`, `$FLOKI`, and `$AAPL` is more amplified by bot-like accounts.
 
-We will first query tweets mentioning these cashtags from Twitter, then query Botometer for bot detection.
+We will first query tweets mentioning these cashtags from Twitter, then query Botometer Pro API to conduct bot detection.
 
 # Instructions
 
 ## Set keys
 
-Before collecting the data, you need to set your Twitter developer app key and RapidAPI key.
+Before collecting the data, you need to set up your Twitter developer app key and RapidAPI key.
 Make a copy of [`keys_template.json`](/scripts/keys_template.json) using the following command:
 
 ```bash
@@ -19,7 +19,7 @@ Put your keys in the corresponding locations in `keys.json`.
 
 ## Collect tweets
 
-First, we need to collect the tweets mentioning these cashtags.
+First, we collect the tweets mentioning these cashtags.
 This can be achieved by the script [`collect_tweets.py`](/scripts/collect_tweets.py).
 We need to pass three parameters to it: the cashtag, number of tweets needed, and the path to the file where we want to store the tweets.
 
